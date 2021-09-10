@@ -2,7 +2,7 @@ $(window).on('load', () => {
   document.querySelector('.websiteLoader').style.opacity = '0';
   setTimeout(() => {
     document.querySelector('.websiteLoader').style.display = 'none';
-  }, 1500);
+  }, 1000);
 });
 
 $(document).ready(function () {
