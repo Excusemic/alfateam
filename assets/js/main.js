@@ -1,9 +1,11 @@
-$(document).ready(function () {
+$(window).on('load', () => {
   document.querySelector('.websiteLoader').style.opacity = '0';
   setTimeout(() => {
     document.querySelector('.websiteLoader').style.display = 'none';
   }, 1500);
+});
 
+$(document).ready(function () {
   $('.welcome-hero-banner').slick({
     slidesToShow: 1,
     arrows: false,
