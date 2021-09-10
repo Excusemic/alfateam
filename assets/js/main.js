@@ -10,7 +10,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 8000,
     infinite: true,
   });
   $('.project-hero-banner').slick({
