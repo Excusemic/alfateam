@@ -1273,6 +1273,12 @@ footer {
 
     max-width: 500px;
   }
+  .headingText {
+    max-width: 500px;
+  }
+  .contacts .container {
+    max-width: 500px;
+  }
   .wrap-reverse .flex-text {
     width: 100%;
     max-width: 100%;
