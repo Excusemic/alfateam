@@ -3,6 +3,13 @@ $(window).on('load', () => {
   setTimeout(() => {
     document.querySelector('.websiteLoader').style.display = 'none';
   }, 1000);
+  $('.welcome-hero-banner').slick({
+    slidesToShow: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+  });
 });
 let isDrag = false;
 function handleDrag() {
@@ -16,14 +23,6 @@ function handleDragEnd(url) {
 }
 
 $(document).ready(function () {
-  $('.welcome-hero-banner').slick({
-    slidesToShow: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 8000,
-    infinite: true,
-  });
-
   const menu = document.querySelector('.sideMenu');
   const menuOverlay = document.querySelector('.menuOverlay');
   window.addEventListener('scroll', function () {
