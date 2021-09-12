@@ -4,6 +4,16 @@ $(window).on('load', () => {
     document.querySelector('.websiteLoader').style.display = 'none';
   }, 1000);
 });
+let isDrag = false;
+function handleDrag() {
+  isDrag = true;
+}
+function handleDragEnd(url) {
+  if (isDrag) {
+    return (isDrag = false);
+  } else if (url) return (window.location = url);
+  return (isDrag = false);
+}
 
 $(document).ready(function () {
   $('.welcome-hero-banner').slick({
@@ -13,15 +23,7 @@ $(document).ready(function () {
     autoplaySpeed: 8000,
     infinite: true,
   });
-  $('.project-hero-banner').slick({
-    arrows: false,
-    autoplay: true,
-    infinite: true,
-    centerMode: false,
-    swipeToSlide: true,
-    cssEase: 'linear',
-    variableWidth: true,
-  });
+
   const menu = document.querySelector('.sideMenu');
   const menuOverlay = document.querySelector('.menuOverlay');
   window.addEventListener('scroll', function () {
