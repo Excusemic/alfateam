@@ -439,7 +439,6 @@ body {
   bottom: 0px;
 }
 .project-hero-banner .banner-item:hover p {
-  font-size: 2.2rem;
 }
 .margin-right {
   margin-right: 10%;
@@ -447,7 +446,7 @@ body {
 .project-hero-banner .banner-item p {
   text-align: center;
   word-spacing: 1000px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 1rem;
   z-index: 5;
   transition: 0.3s ease-in-out;
@@ -1140,6 +1139,9 @@ margin-left: auto;
   }
 }
 @media (max-width: 1150px) {
+  .project-hero-banner .banner-item .gradientDiv {
+    height: 45%;
+  }
   .contacts .containerContact h3 {
     font-size: 32px;
   }
