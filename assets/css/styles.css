@@ -205,7 +205,55 @@ body {
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
+.uIzradi {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: url('../images/hero-banner-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+}
+.uIzradi .head {
+  background-color: #fff;
+}
+.uIzradi .head img {
+  padding: 1.6rem 0rem;
+  width: 300px;
+}
+.uIzradi .uIzradiContent {
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+.uIzradi .uIzradiContent input {
+  width: 300px;
+  height: 40px;
+  padding: 0.8rem;
+  margin-top: 0.6rem;
+}
+.uIzradi .uIzradiContent button {
+  width: 300px;
+  height: 40px;
 
+  margin-top: 0.6rem;
+}
+.uIzradi .uIzradiContent h4 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.uIzradi .head .headContent {
+  width: 80%;
+  margin: auto;
+}
+.wrongpass::-webkit-input-placeholder {
+  color: red;
+  border: red;
+}
 .text {
   display: block;
   margin-top: 75px;
@@ -1431,6 +1479,20 @@ margin-left: auto;
   }
 }
 @media (max-width: 575px) {
+  .uIzradi .head img {
+    width: 200px;
+  }
+  .uIzradi .uIzradiContent {
+    width: 95%;
+  }
+
+  .uIzradi .uIzradiContent h4 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .uIzradi .head .headContent {
+    width: 95%;
+  }
   .hero-banner .banner-item .herobanner-content .content h2 {
     font-size: 25px;
   }

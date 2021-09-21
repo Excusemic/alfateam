@@ -1,4 +1,23 @@
 $(window).on('load', () => {
+  const code = localStorage.getItem('alfaTeamCode');
+
+  if (code !== 'true') {
+    return (window.location.href = '/locked.html');
+  } else {
+    const last_session = localStorage.getItem('alfaTeamSession');
+    if (!last_session) {
+      return (window.location.href = '/locked.html');
+    }
+    const time_now = new Date().getTime();
+    const ms = time_now - last_session;
+    let minutes = (ms / (1000 * 60)).toFixed(1);
+    if (minutes > 30) {
+      localStorage.removeItem('alfaTeamCode');
+      localStorage.removeItem('alfaTeamSession');
+      return (window.location.href = '/locked.html');
+    }
+  }
+
   $.fn.strech_text = function () {
     var elmt = $(this),
       cont_width = elmt.width(),
