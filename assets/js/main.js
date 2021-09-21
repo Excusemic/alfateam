@@ -57,7 +57,7 @@ $(window).on('load', () => {
       },
     ],
     arrows: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     infinite: true,
     prevArrow: $('#prevBtn'),

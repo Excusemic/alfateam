@@ -382,6 +382,7 @@ body {
 .owl-carousel img {
   width: 200px;
 }
+
 .home-section h3,
 .project-section h3 {
   margin-right: 3rem;
@@ -397,8 +398,9 @@ body {
 }
 .home-section h3 {
   margin-right: 0rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.8rem;
 }
+
 .welcome-hero-banner {
   overflow: hidden;
 }
@@ -580,6 +582,7 @@ body {
 }
 .flex-text {
   justify-content: space-between;
+  align-content: flex-start;
   height: 685px;
   display: flex;
   flex-wrap: wrap;
@@ -782,6 +785,7 @@ ul .linkActive a {
   font-size: 40px;
   margin-bottom: 10px;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 .hero-banner .banner-item .herobanner-content .content p {
   font-family: 'Calibri', sans-serif;
@@ -1214,6 +1218,9 @@ margin-left: auto;
   .home-section h3 {
     font-size: 32px;
     margin-bottom: 2.4rem;
+  }
+  .hero-banner .banner-item .herobanner-content .content h2 {
+    font-size: 32px;
   }
   .headingText {
     font-size: 32px;
