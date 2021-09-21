@@ -1,16 +1,54 @@
 $(window).on('load', () => {
+  $.fn.strech_text = function () {
+    var elmt = $(this),
+      cont_width = elmt.width(),
+      txt = elmt.html(),
+      one_line = $('<span class="stretch_it">' + txt + '</span>'),
+      nb_char = elmt.text().length,
+      spacing = cont_width / nb_char,
+      txt_width;
+
+    elmt.html(one_line);
+    txt_width = one_line.width();
+
+    if (txt_width < cont_width) {
+      var char_width = txt_width / nb_char,
+        ltr_spacing = spacing - char_width + (spacing - char_width) / nb_char;
+
+      one_line.css({ 'letter-spacing': ltr_spacing });
+    } else {
+      one_line.contents().unwrap();
+      elmt.addClass('justify');
+    }
+  };
   document.querySelector('.websiteLoader').style.opacity = '0';
   setTimeout(() => {
     document.querySelector('.websiteLoader').style.display = 'none';
   }, 1000);
   $('.welcome-hero-banner').slick({
     slidesToShow: 1,
-    arrows: false,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: false,
+          prevArrow: null,
+          nextArrow: null,
+        },
+      },
+    ],
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 5000,
     infinite: true,
+    prevArrow: $('#prevBtn'),
+    nextArrow: $('#nextBtn'),
   });
+  // $('.p-text p').each(function () {
+  //   $(this).strech_text();
+  // });
 });
+
 let isDrag = false;
 function handleDrag() {
   isDrag = true;
