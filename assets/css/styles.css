@@ -783,11 +783,12 @@ ul .linkActive a {
 .hero-banner .banner-item .herobanner-content .content h2 {
   text-transform: uppercase;
   font-size: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   letter-spacing: 2px;
   font-weight: bold;
 }
 .hero-banner .banner-item .herobanner-content .content p {
+  font-size: 18px;
   font-family: 'Calibri', sans-serif;
   white-space: nowrap;
   width: 45%;
@@ -1212,6 +1213,9 @@ margin-left: auto;
     margin-bottom: 4rem;
     max-width: 660px;
   }
+  .hero-banner .banner-item .herobanner-content .content p {
+    font-size: 16px;
+  }
   .flex-text p {
     font-size: 16px;
   }
@@ -1341,6 +1345,9 @@ margin-left: auto;
 
 @media (max-width: 800px) {
   .flex-text p {
+    font-size: 14px;
+  }
+  .hero-banner .banner-item .herobanner-content .content p {
     font-size: 14px;
   }
   .contacts .containerContact h3 {
