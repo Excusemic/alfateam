@@ -14,6 +14,7 @@
   width: 80px;
   height: 80px;
 }
+
 .lds-ripple div {
   position: absolute;
   border: 4px solid #fff;
@@ -280,27 +281,28 @@ body {
   background-color: red;
   border-radius: 50%;
 }
-.contacts .container {
+.contacts .containerContact {
   display: flex;
   flex-direction: column;
-  width: 75%;
-  max-width: 1150px;
+  width: 90%;
+  margin-right: 0rem;
+  margin-left: auto;
 }
-.contacts .container .contacts-text {
+.contacts .containerContact .contacts-text {
   max-width: 500px;
   justify-content: space-between;
   display: flex;
 }
-.contacts .container .contacts-text p {
+.contacts .containerContact .contacts-text p {
   line-height: 1.15rem;
   margin-bottom: 0rem;
   font-size: 1rem;
 }
-.contacts .container .contacts-text a {
+.contacts .containerContact .contacts-text a {
   text-decoration: none;
   color: unset;
 }
-.contacts .container h3 {
+.contacts .containerContact h3 {
   flex-basis: 100%;
   width: 100%;
   font-style: normal;
@@ -360,9 +362,10 @@ body {
   display: inline-block;
 }
 .headingText {
-  width: 75%;
-  max-width: 1150px;
+  width: 90%;
   margin: auto;
+  margin-right: 0px;
+
   margin-bottom: 4rem;
   margin-top: 0rem;
   font-style: normal;
@@ -473,6 +476,22 @@ body {
   position: relative;
   align-items: center;
 }
+.zoomOverlay {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.302);
+}
+.home-section .imgContainer:hover .zoomOverlay {
+  opacity: 1;
+}
 .home-section .imgContainer img {
   height: 100%;
   width: 100%;
@@ -485,6 +504,10 @@ body {
 .home-section.wrap-reverse .imgContainer.longer {
   max-width: 901px;
   height: 1121px;
+}
+.home-section .imgContainer .zoomOverlay img {
+  width: 50px;
+  height: 50px;
 }
 /* .home-section .imgContainer {
   width: 470px;
@@ -571,6 +594,10 @@ body {
   width: 100%;
   z-index: 50;
   background-color: #fff;
+}
+header .containerHeader {
+  width: 80%;
+  margin: auto;
 }
 .collapse {
 }
@@ -1104,9 +1131,16 @@ margin-left: auto;
   .home-section {
     width: 95%;
   }
+  .headingText,
+  .contacts .containerContact {
+    width: 95%;
+  }
+  header .containerHeader {
+    width: 90%;
+  }
 }
 @media (max-width: 1150px) {
-  .contacts .container h3 {
+  .contacts .containerContact h3 {
     font-size: 32px;
   }
   .headingText {
@@ -1153,7 +1187,8 @@ margin-left: auto;
   }
   .home-section .imgContainer,
   .home-section .imgContainer.long,
-  .home-section .imgContainer.longer {
+  .home-section .imgContainer.longer,
+  .home-section.wrap-reverse .imgContainer.longer {
     margin-top: 2rem;
     height: auto;
     width: auto;
@@ -1190,6 +1225,12 @@ margin-left: auto;
   .home-section {
     max-width: 660px;
     flex-wrap: wrap;
+  }
+  .headingText,
+  .contacts .containerContact {
+    max-width: 660px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .home-section .flex-text {
     flex-basis: 100%;
@@ -1233,7 +1274,7 @@ margin-left: auto;
   .flex-text p {
     font-size: 14px;
   }
-  .contacts .container h3 {
+  .contacts .containerContact h3 {
     font-size: 30px;
   }
   .home-section h3,
@@ -1253,7 +1294,7 @@ margin-left: auto;
     height: 290px;
     width: 250px;
   }
-  .contacts .container {
+  .contacts .containerContact {
     width: 90%;
   }
   /* .home-section {
@@ -1273,7 +1314,7 @@ margin-left: auto;
   .imgSliderContainer {
     width: 90%;
   }
-  .contacts .container {
+  .contacts .containerContact {
     width: 90%;
   }
   /* .home-section {
@@ -1286,7 +1327,7 @@ margin-left: auto;
   .headingText {
     width: 90%;
   }
-  .contacts .container .contacts-text {
+  .contacts .containerContact .contacts-text {
     flex-wrap: wrap;
   }
   .sideMenu {
@@ -1464,7 +1505,7 @@ margin-left: auto;
   }
   .headingText {
   }
-  .contacts .container {
+  .contacts .containerContact {
   }
   .wrap-reverse .flex-text {
     width: 100%;
@@ -1535,6 +1576,21 @@ margin-left: auto;
   }
   .home-section.wrap-reverse {
     margin: auto;
+    max-width: 1790px;
+  }
+  .headingText {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1790px;
+  }
+  .contacts .containerContact {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1790px;
+  }
+  header .containerHeader {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1790px;
   }
 }
