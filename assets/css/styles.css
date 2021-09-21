@@ -366,7 +366,7 @@ body {
   margin: auto;
   margin-right: 0px;
 
-  margin-bottom: 4rem;
+  margin-bottom: 6.5rem;
   margin-top: 0rem;
   font-style: normal;
   font-weight: bold;
@@ -839,11 +839,11 @@ ul .linkActive a {
 
 .grey-bg {
   overflow: hidden;
-  padding: 5rem 0rem;
+  padding: 6.5rem 0rem;
   background: #f9f9f9;
 }
 .white-bg {
-  padding: 5rem 0rem;
+  padding: 6.5rem 0rem;
   background: #fff;
 }
 .page-title h3 {
@@ -1140,6 +1140,12 @@ margin-left: auto;
   }
 }
 @media (max-width: 1150px) {
+  .grey-bg {
+    padding: 5rem 0rem;
+  }
+  .white-bg {
+    padding: 5rem 0rem;
+  }
   .home-section.wrap-reverse .flex-text.longer {
     height: auto;
   }
@@ -1151,6 +1157,7 @@ margin-left: auto;
     font-size: 32px;
   }
   .headingText {
+    margin-bottom: 4rem;
     max-width: 660px;
   }
   .flex-text p {
