@@ -1694,6 +1694,8 @@ margin-left: auto;
 @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
   @media {
     .autobreak {
+      text-align-last: unset;
+      white-space: unset;
       display: block;
     }
     .p-text {
@@ -1705,6 +1707,8 @@ margin-left: auto;
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
     .autobreak {
+      text-align-last: unset;
+      white-space: unset;
       display: block;
     }
     .p-text {
@@ -1717,6 +1721,8 @@ margin-left: auto;
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (not (stroke-color: transparent)) {
     .autobreak {
+      text-align-last: unset;
+      white-space: unset;
       display: block;
     }
     .p-text {
@@ -1729,6 +1735,8 @@ margin-left: auto;
 @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
   @media {
     .autobreak {
+      text-align-last: unset;
+      white-space: unset;
       display: block;
     }
     .p-text {
