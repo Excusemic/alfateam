@@ -701,6 +701,7 @@ ul .linkActive a {
 }
 
 #header nav.nav {
+  cursor: pointer;
   justify-content: space-between;
   align-items: center;
 }
