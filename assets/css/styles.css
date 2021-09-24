@@ -503,26 +503,27 @@ body {
   transition: 0.3s ease-in-out;
 }
 .home-section .textContainer {
-  min-width: 435px;
-  max-width: 435px;
+  min-width: 400px;
+  max-width: 400px;
   display: flex;
   justify-content: center;
 }
 .home-section .textContainer.wide {
-  min-width: 550px;
-  max-width: 550px;
+  min-width: 500px;
+  max-width: 500px;
 }
 
 .home-section.wrap-reverse .textContainer.wider {
-  min-width: 545px;
-  max-width: 545px;
+  min-width: 525px;
+  max-width: 525px;
   display: flex;
   justify-content: center;
 }
 .home-section .imgContainer {
+  align-self: center;
   cursor: pointer;
   max-width: 1080px;
-  height: 685px;
+  height: 100%;
   flex-grow: 1;
   position: absolute;
   top: 50%;
@@ -553,11 +554,11 @@ body {
 }
 .home-section .imgContainer.long {
   max-width: 901px;
-  height: 1000px;
+  height: 100%;
 }
 .home-section.wrap-reverse .imgContainer.longer {
   max-width: 901px;
-  height: 1121px;
+  height: 100%;
 }
 .home-section .imgContainer .zoomOverlay img {
   width: 50px;
@@ -588,7 +589,7 @@ body {
 .flex-text {
   justify-content: space-between;
   align-content: flex-start;
-  height: 685px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -600,7 +601,7 @@ body {
   width: 100%;
   white-space: nowrap;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4rem;
 }
 .flex-text p.except {
@@ -611,7 +612,7 @@ body {
   height: 100%;
 }
 .home-section.wrap-reverse .flex-text.longer {
-  height: 1121px;
+  height: 100%;
 }
 .align-right {
   text-align: right;
